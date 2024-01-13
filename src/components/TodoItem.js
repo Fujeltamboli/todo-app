@@ -37,12 +37,7 @@ const TodoItem = ({ todo }) => {
           <div>
             <input type="text" value={editedTask} onChange={(e) => setEditedTask(e.target.value)} />
           </div>
-          <div>
-            <textarea
-              value={editedDescription}
-              onChange={(e) => setEditedDescription(e.target.value)}
-            />
-          </div>
+          
           <button onClick={handleSave}>Save</button>
         </div>
       )
